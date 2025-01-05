@@ -2472,26 +2472,27 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		position: relative;
-		background-image: url("images/dvfarms2.jpg"), url("images/dvfarms2.jpg"), url("../../images/banner.jpg");
-		background-position: top left, top left, center center;
-		background-repeat: repeat, repeat, no-repeat;
-		background-size: auto, auto, cover;
-		z-index: 1;
-		padding: 11em 0;
-	}
+    position: relative;
+    background-image: url("images/dvfarms2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    padding: 0em 0;
+    height: 100vh; /* Ensures the banner covers the full viewport height */
+}
 
 		#banner .content {
-			position: relative;
-			background-color: rgba(21, 28, 23, 0.85);
-
-			background-position: top left, center center;
-			background-size: auto, 100% 250%;
-			background-repeat: repeat, no-repeat;
-			text-align: center;
-			margin: 0;
-			padding: 4em 0 3.5em 0;
-		}
+            position: absolute; /* Ensures the content sits on top of the image */
+            top: 50%; /* Centers the content vertically */
+            left: 50%; /* Centers the content horizontally */
+            transform: translate(-50%, -50%); /* Adjusts for true centering */
+            background-color: rgba(21, 28, 23, 0.85);
+            text-align: center;
+            padding: 4em 2em; /* Adjust padding as needed for spacing */
+            width: 100%; /* Ensures the banner stretches across the screen */
+            box-sizing: border-box; /* Includes padding in width calculation */
+        }
 
 			#banner .content h2 {
 				color: #fff;
