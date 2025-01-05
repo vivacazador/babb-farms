@@ -2335,7 +2335,7 @@ input, select, textarea {
 /* Nav */
 
 	body {
-		padding-top: 3.25em;
+		padding-top: 5.25em;
 	}
 
 	#nav {
@@ -2346,7 +2346,7 @@ input, select, textarea {
 		background-color: rgba(255, 255, 255, 0.95);
 		background-image: url("images/overlay.png");
 		width: 100%;
-		height: 3.25em;
+		height: 5.25em;
 		line-height: 3.25em;
 		text-align: center;
 		font-family: 'Open Sans Condensed', sans-serif;
@@ -2390,6 +2390,7 @@ input, select, textarea {
 				border-bottom-left-radius: 6px;
 				border-bottom-right-radius: 6px;
 				outline: 0;
+				font-size: 1.3em; /* Default size, not listed but assumed */
 			}
 
 			#nav li:hover, #nav li.active {
@@ -3100,4 +3101,283 @@ input, select, textarea {
 				font-size: 10pt;
 			}
 
+/*history section css*/
 	}
+	.history-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+
+.history-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1.5em;
+}
+
+.text-column {
+    flex: 1;
+    min-width: 250px;
+    max-width: 600px;
+}
+
+.image-column {
+    flex: 0 0 500px; /* Adjust this value to control the image size */
+    text-align: center; /* Centers the image within the column */
+}
+
+.image-column img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
+
+.history-section .text-column + .image-column {
+    margin-top: 1.5em; /* Adds spacing below the text */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .history-content {
+        flex-direction: column; /* Stacks items vertically */
+    }
+
+    .image-column,
+    .text-column {
+        flex: 1 1 100%; /* Full-width for both columns */
+        max-width: 100%;
+    }
+
+    .image-column img {
+        max-width: 80%; /* Optional: reduce image size slightly for mobile */
+        margin: 0 auto;
+    }
+
+    .history-section .text-column + .image-column {
+        margin-top: 1em; /* Adjusts spacing for stacked layout */
+    }
+}
+/* wheat section css */
+.ourwheat-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+.ourwheat-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.ourwheat-text-column {
+    flex: 1;
+    min-width: 250px;
+    max-width: 600px;
+}
+
+.ourwheat-image-column {
+    flex: 0 0 420px; /* Adjust to control the image size */
+    text-align: center;
+}
+
+.ourwheat-image-column img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
+.ourwheat-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+.ourwheat-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.ourwheat-text-column {
+    flex: 1;
+    min-width: 250px;
+    max-width: 600px;
+}
+
+.ourwheat-image-column {
+    flex: 0 0 300px;
+    text-align: center;
+}
+
+.ourwheat-image-column img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .ourwheat-content {
+        flex-direction: column; /* Stacks items vertically */
+    }
+
+    .ourwheat-image-column,
+    .ourwheat-text-column {
+        flex: 1 1 100%; /* Full-width for both columns */
+        max-width: 100%;
+    }
+
+    .ourwheat-image-column img {
+        max-width: 80%; /* Optional: reduce image size slightly for mobile */
+        margin: 0 auto;
+    }
+
+    .ourwheat-section .ourwheat-text-column + .ourwheat-image-column {
+        margin-top: 1em; /* Adjusts spacing for stacked layout */
+    }
+}
+
+/* our standards section css */
+.ourstandards-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2.5em;
+    margin-bottom: 2em;
+}
+
+.ourstandards-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.ourstandards-image-column {
+    flex: 0 0 400px;
+    text-align: center;
+    margin-right: 1.5em; /* Adds spacing to the right of the image */
+}
+
+.ourstandards-image-column img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
+
+.ourstandards-text-column {
+    flex: 1;
+    min-width: 250px;
+    max-width: 800px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .ourstandards-content {
+        flex-direction: column; /* Stacks items vertically */
+    }
+
+    .ourstandards-image-column,
+    .ourstandards-text-column {
+        flex: 1 1 90%; /* Full-width for both columns */
+        max-width: 1000%;
+    }
+
+    .ourstandards-image-column img {
+        max-width: 80%; /* Optional: reduce image size slightly for mobile */
+        margin: 0 auto;
+    }
+
+    .ourstandards-section .ourstandards-image-column + .ourstandards-text-column {
+        margin-top: 1em; /* Adjusts spacing for stacked layout */
+    }
+    }
+/* Products and services css */
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+.products-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.products-image-column {
+    flex: 0 0 400px;
+    text-align: center;
+    margin-right: 1.5em; /* Adds spacing to the right of the image */
+}
+
+.products-image-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+.products-text-column {
+    flex: 1;
+    min-width: 250px;
+    max-width: 800px;
+    padding-left: 0.5em; /* Adds some spacing between text and image */
+}
+
+@media (max-width: 768px) {
+    .products-content {
+        flex-direction: column; /* Stacks items vertically */
+    }
+
+    .products-image-column,
+    .products-text-column {
+        flex: 1 1 100%; /* Full-width for both columns */
+        max-width: 100%;
+    }
+
+    .products-image-column img {
+        max-width: 80%; /* Optional: reduce image size slightly for mobile */
+        margin: 0 auto;
+    }
+
+    .products-text-column {
+        padding-left: 0; /* Removes extra padding for mobile */
+    }
+}
+
+/* contact us css */
+
+.contact-banner img {
+  width: 100%;
+  height: 200px; /* Adjust the height for a thinner banner */
+  object-fit: cover; /* Ensures the image fills the space and crops excess */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  margin-bottom: 2em;
+}
+
+.box.page-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.box.page-content ul li {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+ul.actions {
+  margin-top: 2em;
+}
+
+ul.actions li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+ul.actions .button.large {
+  font-size: 1.25em;
+  padding: 0.75em 1.5em;
+}
